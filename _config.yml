@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Welcome, Operator
+title: Welcome Back, Operator
 
 # Your name to show in the footer
 author: Devid Lana
@@ -21,10 +21,9 @@ author: Devid Lana
 
 navbar-links:
   About Me: "whoami"
-  Resources:
-    - Advanced Persistent Tortellini: "https://aptw.tf/about/"
   The Collective: "https://aptw.tf/about/"
-
+ # Resources:
+ #   - Advanced Persistent Tortellini: "https://aptw.tf/about/"
 ################
 # --- Logo --- #
 ################
@@ -49,16 +48,16 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
+#  email: "someone@example.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: c/daattali
+#  facebook: deanattali
+  github: https://github.com/her0ness
+  twitter: https://twitter.com/Her0_IT
+#  patreon: DeanAttali
+#  youtube: c/daattali
 #  medium: yourname
 #  reddit: yourname
-#  linkedin: daattali
+  linkedin: https://it.linkedin.com/in/devid-lana
 #  xing: yourname
 #  stackoverflow: "3943160/daattali"
 #  snapchat: deanat78
