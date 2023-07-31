@@ -10,21 +10,20 @@
 ############################
 
 # Name of website
-title: My Website
+title: Welcome, Operator
 
 # Your name to show in the footer
-author: Some Person
+author: Devid Lana
 
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
 
 navbar-links:
-  About Me: "aboutme"
+  About Me: "whoami"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+    - Advanced Persistent Tortellini: "https://aptw.tf/about/"
+  The Collective: "https://aptw.tf/about/"
 
 ################
 # --- Logo --- #
