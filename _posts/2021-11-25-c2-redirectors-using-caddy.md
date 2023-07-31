@@ -44,7 +44,7 @@ Another important factor is the configurative side that is very easy to understa
 [![1]({{site.baseurl}}/assets/img/01.jpg)]({{site.baseurl}}/assets/img/01.jpg)
 
 
-do you remember byt3bl33d3r's post listed just above ? (Of course, you wrote it 4 lines higher...) let's take a cue from it!
+do you remember byt3bl33d3r's post listed just above ? (Of course, you wrote it 4 lines higher..) let's take a cue from it!
 
 First of all let's install Caddy Server with the following commands:
 
