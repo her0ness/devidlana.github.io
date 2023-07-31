@@ -10,4 +10,4 @@ My core skill set involves emulating real-world cyber attacks through Adversary 
 
 Throughout my experience in the offensive security field, I have participated in and managed several engagements targeting banks, insurance companies, critical infrastructures, and various other businesses.
 
-My primary interest lies in synthesizing and researching new techniques employed by attackers, aiming to enhance the security posture of the companies I work with.
+My primary interest lies in synthesizing and researching new techniques employed by attackers, aiming to enhance the security posture of the companies I work with..
