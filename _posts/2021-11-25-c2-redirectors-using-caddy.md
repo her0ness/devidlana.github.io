@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Carrying the Tortellini's golf sticks	
+title: Caddy as redirector for Red Team Operations	
 subtitle: Using Caddy to spin up fast and reliable C2 redirectors.
 #image: /img/tortellinicaddy.jpg
 published: true
