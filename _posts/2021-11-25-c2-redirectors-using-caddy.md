@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 🇬🇧 Carrying the Tortellini's golf sticks	
+title: Carrying the Tortellini's golf sticks	
 subtitle: Using Caddy to spin up fast and reliable C2 redirectors.
 image: /img/tortellinicaddy.jpg
 published: true
@@ -9,7 +9,6 @@ author:
 - knifesec
 ---
 ### Giving Caddy redirectors some love
-[![tortellinicaddy]({{site.baseurl}}/img/tortellinicaddy.jpg)]({{site.baseurl}}/img/tortellinicaddy.jpg)
 
 The consultant's life is a difficult one. New business, new setup and sometimes you gotta do everything in a hurry. We are not a top notch security company with a fully automated infra. We are poor, rookies and always learning from the best.
 
@@ -42,7 +41,7 @@ Another important factor is the configurative side that is very easy to understa
 
 
 ### Let's Configure!
-[![1]({{site.baseurl}}/img/01.jpg)]({{site.baseurl}}/img/01.jpg)
+[![1]({{site.baseurl}}/assets/img/01.jpg)]({{site.baseurl}}/assets/img/01.jpg)
 
 
 do you remember byt3bl33d3r's post listed just above ? (Of course, you wrote it 4 lines higher...) let's take a cue from it!
@@ -116,7 +115,7 @@ import upstreams/*.caddy
 #Import all sites configuration files (only with .caddy extension)
 import sites/*.caddy
 ```
-[![2]({{site.baseurl}}/img/02.jpg)]({{site.baseurl}}/img/02.jpg)
+[![2]({{site.baseurl}}/assets/img/02.jpg)]({{site.baseurl}}/assets/img/02.jpg)
 
 We decided to keep the Caddyfile as clean as possible, spending some more time structuring and modulating the `.caddy` files
 
@@ -218,7 +217,7 @@ The `handle` directive is kind of similar to the `location` directive from nginx
 
 To make things more comprehensive, here we have the sample of `http-get` block adopted in the Cobalt Strike malleable profile:
 
-[![3]({{site.baseurl}}/img/03.jpg)]({{site.baseurl}}/img/03.jpg)
+[![3]({{site.baseurl}}/assets/img/03.jpg)]({{site.baseurl}}/assets/img/03.jpg)
 
 ```
 # Just a fancy name
@@ -302,7 +301,7 @@ Once started, caddy will automatically obtain the SSL certificate. Remember to s
 sudo caddy start
 ```
 
-[![4]({{site.baseurl}}/img/04.jpg)]({{site.baseurl}}/img/04.jpg)
+[![4]({{site.baseurl}}/assets/img/04.jpg)]({{site.baseurl}}/assets/img/04.jpg)
 
 To reload the configuration, you can just run the following command in the root configuration folder of Caddy
 
@@ -313,7 +312,7 @@ sudo caddy reload
 
 Everything worked as expected and the beacon is obtained
 
-[![5]({{site.baseurl}}/img/05.jpg)]({{site.baseurl}}/img/05.jpg)
+[![5]({{site.baseurl}}/assets/img/05.jpg)]({{site.baseurl}}/assets/img/05.jpg)
 
 ### A final thought
 
