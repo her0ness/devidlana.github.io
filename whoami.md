@@ -1,16 +1,13 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: Whoami
+subtitle: Just an operator
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Devid,
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+My core skill set involves emulating real-world cyber attacks through Adversary Simulation and Red Team exercises.
 
-What else do you need?
+Throughout my experience in the offensive security field, I have participated in and managed several engagements targeting banks, insurance companies, critical infrastructures, and various other businesses.
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+My primary interest lies in synthesizing and researching new techniques employed by attackers, aiming to enhance the security posture of the companies I work with.
