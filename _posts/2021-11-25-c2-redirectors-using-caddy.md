@@ -2,7 +2,7 @@
 layout: post
 title: Carrying the Tortellini's golf sticks	
 subtitle: Using Caddy to spin up fast and reliable C2 redirectors.
-image: /img/tortellinicaddy.jpg
+#image: /img/tortellinicaddy.jpg
 published: true
 author:
 - Her0_IT
