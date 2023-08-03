@@ -17,11 +17,11 @@ Since our aim is not to name and shame and possibly avoid jail time, we will cal
 
 The methodology we followed was partially based on pre-existing research, and it’s impossible not to mention the MDSec’s research on Cylance. To summarise, we gathered previous research and identified the various places within the operating system where EDRs had some presence, both from a configuration and detection perspective:
 
-1) Injected DLLs
-2) Registry Keys
-3) Network Communication
-4) Install/Uninstall process
-5) File quarantine 
+- Injected DLLs
+- Registry Keys
+- Network Communication
+- Install/Uninstall process
+- File quarantine 
 
 At the time of this research, we did not perform any kernel-based analysis as we did not have those skills yet. Note that this first part was technically performed in 2020, so bear in mind that in the past three years the evolution of both offensive and defensive technologies had an extremely fast advancement. it is therefore not guaranteed that this technique will work with actual (2023) modern EDRs.
 ## The Vulnerability
