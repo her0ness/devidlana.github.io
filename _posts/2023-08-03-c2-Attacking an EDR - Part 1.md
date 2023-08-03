@@ -7,7 +7,7 @@ comments: true
 
 ## Introduction
 
-DISCLAMER: This post was done in collaboration with Riccardo Ancarani. You can find his blog here: https://riccardoancarani.github.io/
+DISCLAMER: This post was done in collaboration with Riccardo Ancarani. You can find his blog here: [https://riccardoancarani.github.io](https://riccardoancarani.github.io)
 
 This post is the first of what - we hope - will be a long series of articles detailing some common flaws that can be found on modern EDR products. By no means this will be a complete reference, but will hopefully provide some practical tools to analyze these gargantuesque products and attempt to understand their functionalities from a black box perspective. 
 
