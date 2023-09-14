@@ -7,7 +7,7 @@ comments: true
 
 ## Introduction - Where we left off
 
-DISCLAMER: This post was done in collaboration with Riccardo Ancarani. You can find his blog here: [her0ness - Attacking an EDR Part 2](https://her0ness.github.io/2023-08-03-c2-Attacking-an-EDR-Part-2/)
+DISCLAMER: This post was done in collaboration with Riccardo Ancarani. You can find his blog here: [https://riccardoancarani.github.io](https://riccardoancarani.github.io/2023-09-14-attacking-an-edr-part-2/)
 
 Continuing from our last research, we pursued the exploration of the attack surface of the EDR solution under our scrutiny, STRANGETRINITY. Last time we focused on identifying exclusions within the EDR’s configuration that allowed us to perform actions that would not be possible otherwise. This time around, our focus will be on the communication channel between the EDR agent and its tenant.
 
