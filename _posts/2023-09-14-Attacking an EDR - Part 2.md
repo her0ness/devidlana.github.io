@@ -51,7 +51,7 @@ However, we managed to find an exception and a specific method that we will call
 Calling the method returns the status of the agent, the enabled security features and the URL of the remote tenant.
 
 The following is a sample of the content:
-```json
+`json
 {
  "agent-unique-id": "8fb4b3fc-4576-11ee-be56-0242ac120002",
  "agent-last-checkin": "2020-02-12",
@@ -61,7 +61,7 @@ The following is a sample of the content:
  "agent-version": "2.0",
  "some-other-random-params": "foobar"
 }
-```
+`
 
 As it is possible to see from the snippet above, a field named “anti-tampering” was present. This reinforced our hypothesis that setting was configurable in some way. Moreover, since this was a research effort and not a black box test, the EDR’s cloud tenant was used to verify that. 
 
