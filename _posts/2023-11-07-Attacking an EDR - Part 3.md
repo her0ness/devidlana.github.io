@@ -35,7 +35,7 @@ Assumptions such as:
 
 Can be misleading and give a false sense of security. Our recommendation is to start challenging those assumptions and start designing products that can withstand those situations. 
 
-The assumption that an attack will happen necessarily when a solution is at its best state is simply incorrect. We’re clearly not the pioneers of this approach, and a similar concept was also discussed by Prelude Security’s team ADD LINK.
+The assumption that an attack will happen necessarily when a solution is at its best state is simply incorrect. We’re clearly not the pioneers of this approach, and a similar concept was also discussed by Prelude Security’s team [An Argument for Continous Security Testing](https://www.linkedin.com/posts/preludesecurity_an-argument-for-continuous-security-testing-activity-7099778443835228160-40Ix/).
 
 Enough theory, let’s get our hands dirty.
 
@@ -45,18 +45,20 @@ Enough theory, let’s get our hands dirty.
 
 The process began by analyzing all the files, logs and in general artifacts that the EDR solution left on disk that were accessory to its functionality. Essentially we were looking at all the things that were “left over”. 
 
-Unsurprisingly, within the C:\ProgramData folder, it was possible to find a subfolder related to the STRANGETRINITY product. Within that folder, a “UserCrashDump'' directory was identified. The folder contained mostly text files, which apparently stored logs related to the installation and update of the product. Amongst all the entries, after a careful analysis, an interesting command line was found:
+Unsurprisingly, within the `C:\ProgramData` folder, it was possible to find a subfolder related to the STRANGETRINITY product. Within that folder, a `UserCrashDump` directory was identified. The folder contained mostly text files, which apparently stored logs related to the installation and update of the product. Amongst all the entries, after a careful analysis, an interesting command line was found:
 
-
+```
 <TIMESTAMP> Property Change: Adding ApplyConfigProtectRollback property, its value is: StrangeTrinity.exe unshield_from_authorized_process
-
+```
 
 Well, that sounded quite interesting. Obviously at that time we had no clue of what the functionality that command was, we could only guess by its name. However, it sounded promising enough to push us to continue towards that route.
 
 Without wasting too much time, we tried to run the same command again from an elevated command prompt and… …drumroll… it didn’t work! However, luckily for us, the program was kind enough to give us some hints of why it didn’t work. Specifically, the output that we obtained was something along the lines of:
 
+```
 Parent process is not signed by `Vendor`
 `Unshield not approved.`
+```
 
 ### Unshield from authorized process
 
@@ -86,7 +88,8 @@ Testing this was simple enough, as we only had to execute the following command:
 
 With much surprise, we obtained an `Unshield approved` prompt, this looked like a crackme after all! Checking the EDR’s configuration by using the official troubleshooting utility indeed showed that the anti-tamper was disabled and the solution could be either uninstalled or tampered with trivially. 
 
-[![1]({{site.baseurl}}/assets/img/01.jpg)]({{site.baseurl}}/assets/img/V3-1.jpg)
+[![1]({{site.baseurl}}/assets/img/01.jpg)]({{site.baseurl}}/assets/img/V3-1.png)
+
 
 ## Appdomain Hijacking 
 
@@ -168,7 +171,9 @@ To perform the attack, place all the files in the same folder:
 
 Once the LogAgent.exe utility was then started, the malicious .NET DLL was loaded in the signed process which eventually launched the StrangeTrinity.exe. The attack worked as expected, unshielding the solution’s anti-tamper last line of defense, and the issue was communicated to the vendor.
 
-[![1]({{site.baseurl}}/assets/img/01.jpg)]({{site.baseurl}}/assets/img/V3-2.jpg)
+
+[![1]({{site.baseurl}}/assets/img/01.jpg)]({{site.baseurl}}/assets/img/V3-2.png)
+
 
 ## Conclusions
 
