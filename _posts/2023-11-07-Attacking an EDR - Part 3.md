@@ -174,7 +174,7 @@ To perform the attack, place all the files in the same folder:
 Once the LogAgent.exe utility was then started, the malicious .NET DLL was loaded in the signed process which eventually launched the StrangeTrinity.exe. The attack worked as expected, unshielding the solution’s anti-tamper last line of defense, and the issue was communicated to the vendor.
 
 
-[![1]({{site.baseurl}}/assets/img/V3-2.png)]({{site.baseurl}}/assets/img/V3-2.png)
+[![1]({{site.baseurl}}/assets/img/v3-2.png)]({{site.baseurl}}/assets/img/v3-2.png)
 
 
 ## Conclusions
