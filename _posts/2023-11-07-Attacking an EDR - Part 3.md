@@ -88,7 +88,7 @@ Testing this was simple enough, as we only had to execute the following command:
 
 With much surprise, we obtained an `Unshield approved` prompt, this looked like a crackme after all! Checking the EDR’s configuration by using the official troubleshooting utility indeed showed that the anti-tamper was disabled and the solution could be either uninstalled or tampered with trivially. 
 
-[![1]({{site.baseurl}}/assets/img/01.jpg)]({{site.baseurl}}/assets/img/V3-1.png)
+[![1]({{site.baseurl}}/assets/img/V3-1.png)]({{site.baseurl}}/assets/img/V3-1.png)
 
 
 ## Appdomain Hijacking 
@@ -172,7 +172,7 @@ To perform the attack, place all the files in the same folder:
 Once the LogAgent.exe utility was then started, the malicious .NET DLL was loaded in the signed process which eventually launched the StrangeTrinity.exe. The attack worked as expected, unshielding the solution’s anti-tamper last line of defense, and the issue was communicated to the vendor.
 
 
-[![1]({{site.baseurl}}/assets/img/01.jpg)]({{site.baseurl}}/assets/img/V3-2.png)
+[![1]({{site.baseurl}}/assets/img/V3-2.png)]({{site.baseurl}}/assets/img/V3-2.png)
 
 
 ## Conclusions
